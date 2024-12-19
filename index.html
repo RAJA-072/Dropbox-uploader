@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Bill Upload</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient background */
+      color: #333;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    h1 {
+      color: #ffffff;
+      background: #ff6f61; /* Vibrant header color */
+      padding: 20px;
+      border-radius: 8px;
+      margin: 0 0 20px;
+      font-size: 2.5em;
+      text-transform: uppercase;
+    }
+    p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    input[type="file"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff6f61; /* Vibrant button color */
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e55d50; /* Darker shade for hover effect */
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Uploader</h1>
+    <p>Please upload a clear content of your Resume.</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="file">Select Bill Image:</label>
+        <input type="file" id="file" name="file" accept="image/*" required />
+      </div>
+      <button type="submit">Upload Bill</button>
+    </form>
+    <div class="footer">
+      <p>&copy; 2024 Your Bill Uploader. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
